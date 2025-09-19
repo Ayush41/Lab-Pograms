@@ -2,38 +2,6 @@
 
 This repository contains solutions to common Python programming problems, ideal for practice, labs, or academic assignments. Each question focuses on fundamental programming concepts like strings, loops, conditionals, and basic data structures.
 
----
-
-## Questions
-
-### ✅ 1. Analyze Customer Reviews (Character Frequency)
-
-**Problem:**  
-An e-commerce platform wants to analyze customer reviews by identifying the most frequent characters used.  
-**Task:**  
-Write a Python program to count the frequency of each character in a review and display them in **descending order of frequency**.
-
-**Concepts Used:**  
-- String processing  
-- Character counting  
-- Sorting  
-- Input/Output
-
----
-
-### ✅ 2. Anagram Checker (Sentence-Level)
-
-**Problem:**  
-Write a Python program to check whether **two sentences are anagrams** of each other. Ignore spaces, punctuation, and letter casing.
-
-**Concepts Used:**  
-- String normalization (case, spaces, punctuation)  
-- Character comparison  
-- Manual sorting (optional)  
-- Input/Output
-
----
-
 # Python Lab Questions
 
 This repository contains solutions to various Python programming problems, useful for practice, labs, or academic assignments. The problems cover a wide range of fundamental programming concepts including strings, recursion, functions, sorting, and more.
@@ -49,6 +17,9 @@ An e-commerce platform wants to analyze customer reviews by identifying the most
 **Task:**  
 Write a Python program to count the frequency of each character in a review and display them in **descending order of frequency**.
 
+**Solution:**  
+[sol2.py](./Python/Sol1.py)
+
 ---
 
 ### 2. Anagram Checker (Sentence-Level)
@@ -56,6 +27,8 @@ Write a Python program to count the frequency of each character in a review and 
 **Problem:**  
 Write a Python program to check whether **two sentences are anagrams** of each other. Ignore spaces, punctuation, and letter casing.
 
+**Solution:**  
+[sol2.py](./Python/Sol2.py)
 ---
 
 ### 3. Longest Substring Without Repeating Characters in Password
@@ -63,6 +36,8 @@ Write a Python program to check whether **two sentences are anagrams** of each o
 **Problem:**  
 A password should not contain repeating characters in sequence. Write a program that finds the longest substring in a password without repeating characters.
 
+**Solution:**  
+[sol2.py](./Python/Sol3.py)
 ---
 
 ### 4. Extract Meaningful Words from System Log

@@ -136,3 +136,24 @@ Write a function `is_armstrong(n)` that checks if a number is an Armstrong numbe
 Write a function `generate_otp()` that internally uses another helper function `random_digit()` to generate a 6-digit OTP.
 
 ---
+
+### 13. Apply Grading Using Higher-Order Functions
+
+**Problem:**  
+Define a function `apply_grading(func, marks)` that accepts another function as an argument. Use different grading functions (e.g., percentage → grade, marks → pass/fail).
+
+---
+
+### 14. Recursive String Reversal
+
+**Problem:**  
+Write a recursive function `reverse_string(s)` that reverses a string without using slicing or loops.
+
+---
+
+### 15. Tower of Hanoi
+
+**Problem:**  
+Write a function `tower_of_hanoi(n, source, auxiliary, target)` to solve the Tower of Hanoi problem for `n` disks.
+
+---

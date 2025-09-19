@@ -94,3 +94,45 @@ Input: `"Loving #Python and #AI for #MachineLearning"`
 Output: `['#Python', '#AI', '#MachineLearning']`
 
 ---
+
+### 7. Longest Substring Without Repeating Characters (General)
+
+**Problem:**  
+Write a program to find the longest substring of a given string without repeating characters.
+
+---
+
+### 8. Palindrome Checker
+
+**Problem:**  
+Write a Python program to check whether a string is a palindrome or not.
+
+---
+
+### 9. Calculate Simple Interest for Multiple Customers
+
+**Problem:**  
+A bank system needs a function `calculate_interest(principal, rate, time)` that calculates simple interest. Write a program to use this function for multiple customers.
+
+---
+
+### 10. Apply Discount to Multiple Products
+
+**Problem:**  
+Write a function `apply_discount(price, discount_percent)` that returns the final price after applying a discount. Use this function to calculate final bills for multiple products.
+
+---
+
+### 11. Armstrong Number Checker
+
+**Problem:**  
+Write a function `is_armstrong(n)` that checks if a number is an Armstrong number. Use this function to print all Armstrong numbers between 100 and 1000.
+
+---
+
+### 12. Generate 6-Digit OTP
+
+**Problem:**  
+Write a function `generate_otp()` that internally uses another helper function `random_digit()` to generate a 6-digit OTP.
+
+---

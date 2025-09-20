@@ -12,7 +12,10 @@ SELECT
     LENGTH(emp_name) AS name_length
 FROM emp;
 
--- Aggregate Function
+-- Aggregate Function(sum,avg,max(),count)
+-- eg queries 
+SELECT SUM(salary) AS total_salary
+FROM emp;
 
 
 -- Q. Calculate avg salary of department greater than 40000
@@ -20,3 +23,9 @@ SELECT dept_id, AVG(salary) AS avg_salary
 FROM emp
 GROUP BY dept_id
 HAVING AVG(salary) > 40000;
+
+
+-- Q. Write avg salary of department greater than 40000
+SELECT department_id,AVG(salary) AS avg_salary 
+FROM employees
+Group BY department_id HAVING avg(salary) >40000;

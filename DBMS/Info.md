@@ -55,9 +55,33 @@ FROM employees
 WHERE salary > 10000;
 ```
 
+### 3. Count employees earning more than 10,000 department-wise
 ```sql
 SELECT department_id, COUNT(*) AS emp_count
 FROM employees
 WHERE salary > 10000
+GROUP BY department_id;
+```
+
+### 4. Find the average salary of all employees
+```sql
+SELECT AVG(salary) AS avg_salary
+FROM employees;
+
+```
+
+### 5. Find the highest and Lowest salary in the company
+```sql
+SELECT 
+  MAX(salary) AS highest_salary,
+  MIN(salary) AS lowest_salary
+FROM employees;
+```
+
+### 6. Count the number of employees in each department who earn more than the overall average salary of all employees.
+```sql
+SELECT department_id, COUNT(*) AS emp_count_above_avg
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees)
 GROUP BY department_id;
 ```

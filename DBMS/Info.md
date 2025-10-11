@@ -28,3 +28,36 @@ Here are the commonly used aggregate functions in Oracle SQL:
 | `MAX()`  | Returns the maximum value from a column |
 | `MIN()`  | Returns the minimum value from a column |
 | `SUM()`  | Returns the total sum of a numeric column |
+
+
+### 🧪 Example:
+
+```sql
+SELECT department_id, COUNT(*) AS employee_count, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id;
+
+
+
+## ❓ Questions and SQL Queries
+
+### 1. Count the total number of employees
+
+```sql
+SELECT COUNT(*) AS total_count 
+FROM employee;
+```
+
+### 2. Count employees earning more than 10,000
+```sql
+SELECT COUNT(*) AS totalEmp
+FROM employees
+WHERE salary > 10000;
+```
+
+```sql
+SELECT department_id, COUNT(*) AS emp_count
+FROM employees
+WHERE salary > 10000
+GROUP BY department_id;
+```

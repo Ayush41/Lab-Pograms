@@ -13,3 +13,18 @@ The repository includes the following:
 
 - Oracle Database (or any compatible version)
 - SQL*Plus or Oracle SQL Developer for executing the queries
+
+
+## 📊 Aggregate Functions in Oracle SQL
+
+**Aggregate functions** perform a calculation on a set of values and return a single value. They are commonly used with the `GROUP BY` clause.
+
+Here are the commonly used aggregate functions in Oracle SQL:
+
+| Function | Description |
+|----------|-------------|
+| `AVG()`  | Returns the average value of a numeric column |
+| `COUNT()` | Returns the number of rows (can count all rows or only non-null values) |
+| `MAX()`  | Returns the maximum value from a column |
+| `MIN()`  | Returns the minimum value from a column |
+| `SUM()`  | Returns the total sum of a numeric column |

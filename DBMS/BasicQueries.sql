@@ -11,3 +11,4 @@ INSERT INTO emp (emp_id, emp_name, job, hire_date, salary) VALUES (2, 'Jane Smit
 INSERT INTO emp (emp_id, emp_name, job, hire_date, salary) VALUES (3, 'Robert Brown', 'Tester', TO_DATE('2019-08-20', 'YYYY-MM-DD'), 40000);
 INSERT INTO emp (emp_id, emp_name, job, hire_date, salary) VALUES (4, 'Emily Davis', 'Developer', TO_DATE('2022-06-05', 'YYYY-MM-DD'), 47000);
 INSERT INTO emp (emp_id, emp_name, job, hire_date, salary) VALUES (5, 'Michael Wilson', 'Manager', TO_DATE('2021-11-22', 'YYYY-MM-DD'), 60000);
+

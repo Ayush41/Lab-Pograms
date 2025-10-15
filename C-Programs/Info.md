@@ -91,3 +91,60 @@ int main() {
 }
 
 ```
+
+## Q3. Program in C to Delete first 2 elements of the array.
+sample input: 1 2 3 4 5 6 
+sample output:3 4 5 6
+
+### **Solution:**
+```c
+
+```
+
+## Q4. Program in C to reverse array elements.
+
+### **Solution:**
+
+```c
+#include<stdio.h>
+
+int main() {
+    int n;
+
+    // Input
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    // Input elements
+    printf("Enter elements of the array: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    printf("Original Array: ");
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);  // Corrected the format specifier to %d
+    }
+    printf("\n");
+    
+    //Reverse 
+    printf("Reversed Array: ");
+    for(int j = n - 1; j >= 0; j--) {
+        printf("%d ", arr[j]);  // Printing the array in reverse order
+    }
+    printf("\n");
+    
+    return 0;
+}
+
+```
+
+## Q5. Program in C to remove duplicates from the array
+
+### **Solution:**
+
+```c
+
+```

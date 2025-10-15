@@ -1,0 +1,5 @@
+Q1. Program in C to calculate factorial of each element of the array
+Q2. Program in C to modify array elements in such a way that the prestored elements should be replaced with the factorial of that number.
+Q3. Program in C to Delete first 2 elements of the array.
+sample input: 1 2 3 4 5 6 
+sample output:3 4 5 6

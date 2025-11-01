@@ -84,11 +84,8 @@ WHERE salary > ANY(
     WHERE deptid = 1
 );
 ```
-### Question:
-Find emp names whoose salary is greater than 
-
 
 3. Nested row subquery:
-    -  
+    - Nested row subquery
 4. Corelated subquery:
-    - 
+    -

@@ -1,11 +1,5 @@
 -- Subqueries Programs of oracle dbms
 
-
--- find an emp name whoose salary is greater than avg salary
-SELECT first_name, last_name, salary
-FROM employees
-WHERE salary > (SELECT AVG(salary) FROM employees);
-
 -- ### LAB QUESTIONS
 -- Creating Employees Table with constraint Foeignkey using department table
 CREATE TABLE employees (
@@ -36,6 +30,12 @@ INSERT INTO employees (empid, empname, empemail, salary, deptid, joindate)
 VALUES (105, 'Eye Carter', 'eye.carter@example.com', 65000, 2, TO_DATE('20-MAR-2023','DD-MON-YYYY'));
 
 
+-- find an emp name whoose salary is greater than avg salary
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+
+
 -- Find employees who work in the IT department
 SELECT empid, empname, salary
 FROM employees
@@ -43,4 +43,27 @@ WHERE deptid = (
     SELECT department_id
     FROM departments
     WHERE department_name = 'IT'
+);
+
+-- Find the highest salary in the company
+SELECT MAX(salary) AS highest_salary
+FROM employees;
+
+
+-- find the second-highest salary in the company
+SELECT MAX(salary) AS second_highest_salary
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+
+-- Find employees who joined before the most recent joining date
+SELECT empid, empname, joindate
+FROM employees
+WHERE joindate < (SELECT MAX(joindate) FROM employees);
+
+-- FInd employees who do not belong to any department
+SELECT empid, empname
+FROM employees
+WHERE deptid NOT IN (
+    SELECT department_id
+    FROM departments
 );

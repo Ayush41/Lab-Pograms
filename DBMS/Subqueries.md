@@ -57,9 +57,38 @@ WHERE department_id IN (
     )
 );
 
+SELECT empname FROM employee
+WHERE deptid IN (
+    SELECT deptid FROM dept 
+    WHERE location IN('delhi','mumbai')
+;)
 ```
 
+# Difference between IN and ANY in SQL
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| **IN**  | Checks if a value **equals any value** in a list or subquery | `SELECT * FROM employees WHERE department_id IN (10,20,30);` |
+| **ANY** | Compares a value to **each value in a subquery**; true if **any comparison** is true | `SELECT * FROM employees WHERE salary > ANY (SELECT salary FROM employees WHERE department_id=90);` |
+
+### Quick Tip:
+- Use **IN** for equality checks.  
+- Use **ANY** for comparisons like >, <, >=, <=.
+
+### Example Question:
+Find emp names whoose salary is greater than the salary of HR department
+```sql
+SELECT empname FROM employee
+WHERE salary > ANY(
+    SELECT salary FROM employee
+    WHERE deptid = 1
+);
+```
+### Question:
+Find emp names whoose salary is greater than 
+
+
 3. Nested row subquery:
-    - 
+    -  
 4. Corelated subquery:
     - 

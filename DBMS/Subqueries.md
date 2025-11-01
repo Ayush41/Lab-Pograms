@@ -30,10 +30,34 @@ FROM employees
 WHERE salary > (
     SELECT AVG(salary) FROM employees
 );
+
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+-- or 
+WHERE salary > avg(salary);
+
 ```
 
 2. Multiple row subquery:
-    - 
+    - It use IN,ALL,ANY operator
+
+### Example Ques: Find the empName whoose location is delhi or mumbai
+<!-- Find emp name whoose location is delhi or mumbai -->
+```sql
+SELECT first_name, last_name
+FROM employees
+WHERE department_id IN (
+    SELECT department_id
+    FROM departments
+    WHERE location_id IN (
+        SELECT location_id
+        FROM locations
+        WHERE city IN ('Delhi', 'Mumbai')
+    )
+);
+
+```
 
 3. Nested row subquery:
     - 

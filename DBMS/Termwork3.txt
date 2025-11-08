@@ -1,0 +1,18 @@
+Q. Based on previous tables answer the following Questionaries: -
+1. Which employees earn the same salary as the employee with Employee_ID = 101? (Excluding
+the employee with ID 101 itself).
+2. List the names of all employees who work in a department located in 'New York'.
+3. List the employee whose salary is the second highest overall.
+4. List all employees working in departments located in 'New York' or 'London'.
+5. Find employees whose salary is less than the salary of at least one employee in Department 10.
+6. Find employees whose salary is greater than the salary of all employees in Department 40.
+7. List the names of all employees who work in departments located in a city that starts with the
+letter 'L'.
+8. Find the department IDs that have an average salary greater than the minimum salary of the
+'Marketing' department.
+9. List all employees whose salary is greater than the maximum salary of any department.
+10. Find all departments whose maximum salary is less than the overall average salary of the entire
+company.
+11. Find departments where ALL employee salaries are greater than the lowest salary in the
+'Operations' department.
+12. Identify employees whose salary is less than the lowest salary of any department located in 'New York'

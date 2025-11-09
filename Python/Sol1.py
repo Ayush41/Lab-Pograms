@@ -12,5 +12,5 @@ def count_character_frequency(review):
     for char, count in sorted_char_count:
         print(f"{char}: {count}")
 
-review = input("Enter the cust review: ")
+review = input("Enter the words to count review char: ")
 count_character_frequency(review)

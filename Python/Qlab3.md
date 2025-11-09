@@ -110,6 +110,23 @@ Write a function `is_armstrong(n)` that checks if a number is an Armstrong numbe
 **Problem:**  
 Write a function `generate_otp()` that internally uses another helper function `random_digit()` to generate a 6-digit OTP.
 
+```python
+import random as rd
+
+def random_digit():
+    # return a single random digit 0-9
+    return rd.randint(0,9)
+
+def generate_otp():
+    otp = ''.join(str(random_digit()) for i in range(6))
+    return otp
+
+print(f"your opt is {generate_otp()}")
+
+
+
+```
+
 ---
 
 ### 13. Apply Grading Using Higher-Order Functions

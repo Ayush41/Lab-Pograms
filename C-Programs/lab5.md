@@ -40,6 +40,34 @@ int main() {
 2. Program using functions to find hcf of two numbers
 
 3. function to generate the fibonacci series using recursion
+```c []
+#include<stdio.h>
+//eg 1,1,2,3,5,8
+int fibonacci(int n){
+        if (n == 0)
+        return 0;       // Base case 1
+    else if (n == 1)
+        return 1;       // Base case 2
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
+}
+
+int main(){
+    int n,i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
+
+    printf("\n");
+    return 0;
+}
+
+```
 4. recursive fnction to find factorial of a number
 ```c []
 #include<stdio.h>

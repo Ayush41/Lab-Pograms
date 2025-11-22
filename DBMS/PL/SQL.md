@@ -1,9 +1,9 @@
 # PL/SQL Queries
 
 
-## PL/SQL Query to check number is ODD or EVEN
+## Ques1. PL/SQL Query to check number is ODD or EVEN
 
-### *Solution:-0*
+### *Solution:-1*
 ```sql
 DECLARE
     num NUMBER := &num;   -- Input from user
@@ -15,4 +15,16 @@ BEGIN
     END IF;
 END;
 /
+```
+
+## Ques2. PL/SQL Query to find factorial of a Number
+### Solution2:
+```sql
+
+```
+
+## Ques3. PL/SQL Query to find largest number among 3 numbers.
+### Solution2:
+```sql
+
 ```

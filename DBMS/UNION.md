@@ -93,3 +93,11 @@ WHERE salary = ANY(
     GROUP BY location
 );
 ```
+### Q6.
+SELECT emp_name
+FROM employees
+WHERE dept_id IN (
+    SELECT dept_id
+    FROM departments
+    WHERE location = 'New York'
+);

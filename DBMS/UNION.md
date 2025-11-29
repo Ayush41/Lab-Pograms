@@ -130,11 +130,53 @@ WHERE dept_id IN (
 ```
 
 ### 9. Departments with IDs that match employees earning above average salary.
+```sql
+SELECT dept_id
+FROM departments
+WHERE dept_id IN (
+    SELECT dept_id
+    FROM employees
+    WHERE salary > (SELECT AVG(salary) FROM employees)
+);
+
+```
+
 
 ### 10. Employees earning above average salary MINUS employees in department 20.
+```sql
+SELECT emp_name
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees)
+
+MINUS
+
+SELECT emp_name
+FROM employees
+WHERE dept_id = 20;
+
+```
 
 ### 11. Combine department names and employee names, but include duplicate department names based on employee count.
+```sql
+SELECT dept_name AS result
+FROM departments d
+JOIN employees e ON d.dept_id = e.dept_id   -- duplicates allowed
+
+UNION ALL
+
+SELECT emp_name
+FROM employees;
+
+```
+
 
 ### 12. Show all employee salaries and department IDs (UNION). Remove all common numbers.
+```sql
 
-### 13. List all employee IDs except those belonging to department 10, and add all department IDs (including duplicates).
+```
+
+
+### 13. List all employee IDs except those belonging to department 10, and add all department IDs (including duplicates).   
+```sql
+
+```

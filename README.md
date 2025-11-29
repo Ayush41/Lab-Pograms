@@ -42,6 +42,28 @@ This folder contains lab programs demonstrating:
 
 ---
 
+### 🟪 Advanced DBMS – Oracle SQL Programs
+
+This folder contains **Advanced Database Management System (DBMS)** lab programs implemented using **Oracle SQL**.  
+It includes practice work on:
+
+- **Relational Database Design** (DDL, DML, Constraints, Normalization)
+- **Advanced SQL Queries** (Nested Subqueries, Correlated Subqueries)
+- **Set Operators** (UNION, UNION ALL, INTERSECT, MINUS)
+- **Joins** (Inner, Outer, Cross, Self Joins)
+- **PL/SQL Programming** (Procedures, Functions, Packages, Triggers, Cursors)
+- **Aggregate & Analytical Functions** (GROUP BY, HAVING, RANK, DENSE_RANK)
+- **Transactions & Exception Handling** (COMMIT, ROLLBACK, SAVEPOINT)
+- **Views, Sequences, Synonyms, Indexes** for database optimization
+- **Performance & Security Concepts** (Query Optimization, User Privileges, Roles)
+
+These programs focus on building strong Oracle SQL and PL/SQL expertise essential for advanced DBMS coursework and real-world applications.
+
+
+👉 [Browse C++ Programs](./CPP)
+
+---
+
 ### 🐍 Python Programs
 This folder includes Python scripts for a variety of problems, including:
 - String Manipulation and Analysis  

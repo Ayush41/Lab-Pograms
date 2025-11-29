@@ -49,6 +49,7 @@ SELECT emp_name FROM employees
 WHERE salary > 60000;
 ```
 
+### 2. List employees who work in departments that exist in London OR Chicago only.
 ```sql
 -- List employees who work in departments that exist in London OR Chicago only.
 SELECT emp_name
@@ -59,7 +60,7 @@ WHERE dept_id IN (
     WHERE location IN ('London', 'Chicago')
 );
 ```
-
+### 3. Names of employees whose salary is above 55000 OR departments that have 5–8 letters.
 ```sql
 -- Names of employees whose salary is above 55000 OR departments that have 5–8 letters.
 SELECT emp_name AS result
@@ -71,6 +72,7 @@ FROM departments
 WHERE LENGTH(dept_name) BETWEEN 5 AND 8;
 ```
 
+### 4. Provide the list of lowest salary employee + departments having minimum department_id.
 
 ```sql
 -- Department with lowest salary
@@ -93,7 +95,7 @@ WHERE salary = ANY(
     GROUP BY location
 );
 ```
-### Q6.
+### Q6. Employees working in departments located in NY
 SELECT emp_name
 FROM employees
 WHERE dept_id IN (
@@ -101,3 +103,14 @@ WHERE dept_id IN (
     FROM departments
     WHERE location = 'New York'
 );
+
+## ### 7. Departments whose IDs occur in both tables AND have employees earning above the overall average salary.
+
+```sql
+SELECT DISTINCT d.dept_id
+FROM departments d
+INTERSECT
+SELECT dept_id
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+```

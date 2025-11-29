@@ -114,3 +114,27 @@ SELECT dept_id
 FROM employees
 WHERE salary > (SELECT AVG(salary) FROM employees);
 ```
+
+### 8. 8. Departments located in cities where total employee salary per department is above 100000.
+
+```sql
+SELECT dept_name, location
+FROM departments
+WHERE dept_id IN (
+    SELECT dept_id
+    FROM employees
+    GROUP BY dept_id
+    HAVING SUM(salary) > 100000
+);
+
+```
+
+### 9. Departments with IDs that match employees earning above average salary.
+
+### 10. Employees earning above average salary MINUS employees in department 20.
+
+### 11. Combine department names and employee names, but include duplicate department names based on employee count.
+
+### 12. Show all employee salaries and department IDs (UNION). Remove all common numbers.
+
+### 13. List all employee IDs except those belonging to department 10, and add all department IDs (including duplicates).

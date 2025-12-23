@@ -1,3 +1,16 @@
+# Program to find all palindrome number from 1 to N
+try:
+    n = int(input("Enter the limit(n):"))
+    print(f"Palindrome num between 1 to {n} are:")
+    
+    for num in range(1,n+1):
+        if str(num) == str(num)[::-1]:
+            print(num,end=" ")
+except ValueError:
+    print("please enter a valid integer")
+
+
+
 # Factorial using Recursion
 def factorial(n):
     if n==0 or n==1:

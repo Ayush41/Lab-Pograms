@@ -172,26 +172,7 @@ FROM employees;
 
 ### 12. Show all employee salaries and department IDs (UNION). Remove all common numbers.
 ```sql
-(
-    SELECT salary AS num
-    FROM employees
-)
-UNION
-(
-    SELECT dept_id AS num
-    FROM departments
-)
-MINUS
-(
-    SELECT salary AS num
-    FROM employees
-    INTERSECT
-    SELECT dept_id AS num
-    FROM departments
-);
-
 ```
-
 
 ### 13. List all employee IDs except those belonging to department 10, and add all department IDs (including duplicates).   
 ```sql

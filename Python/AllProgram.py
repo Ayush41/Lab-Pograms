@@ -32,6 +32,33 @@ fact = factorial_iter(num)
 print(f"The factorial of {num} using iteration is {fact}")
 
 
+# swap
+a= 10
+b = 20
+
+# 1st way
+a,b = b,a
+print("single line swap is :",a,b)
+
+# using temp 3rd var
+temp = a
+a = b
+b = temp
+
+print("swap using 3rd var temp:",a,b)
+
+a = a^b
+b = a^b
+a=a^b
+print("bitlevel swap is :",a,b)
+
+a = a+b
+b = a-b
+a = a-b
+print("arithmetic way to swap is :",a,b)
+
+
+
 # Lambda Function
 # program to square all num in list
 mlist = [1,3,4,6,7,8,2]

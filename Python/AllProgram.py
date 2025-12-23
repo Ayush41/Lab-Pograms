@@ -16,29 +16,29 @@ print(f"The result of ({x}+{y})^2 is: {result}")
 
 
 
-# # Custom Error
-# class NegNumError(Exception):
-#     pass
-# try:
-#     num = int(input("Enter a +ve num:"))
-#     if num<0:
-#         raise NegNumError("Negetive num not allowed")
-#     print(f"you entered {num}")
-# except NegNumError as e:
-#     print("Caugh Custom Error",e)
+# Custom Error
+class NegNumError(Exception):
+    pass
+try:
+    num = int(input("Enter a +ve num:"))
+    if num<0:
+        raise NegNumError("Negetive num not allowed")
+    print(f"you entered {num}")
+except NegNumError as e:
+    print("Caugh Custom Error",e)
     
-# # EXception Handling
-# try: 
-#     num = int(input("Enter a num: "))
-#     result = 100/num
-# except ZeroDivisionError:
-#     print("Error! Cant divide by Zero!")
-# except ValueError:
-#     print("Error! Please enter a valid integer.")
-# else:
-#     print(f"The result is {result}")
-# finally:
-#     print("Execution Complete")
+# EXception Handling
+try: 
+    num = int(input("Enter a num: "))
+    result = 100/num
+except ZeroDivisionError:
+    print("Error! Cant divide by Zero!")
+except ValueError:
+    print("Error! Please enter a valid integer.")
+else:
+    print(f"The result is {result}")
+finally:
+    print("Execution Complete")
 
 # # Short Circuit Evaluation
 # a,b = 0,10

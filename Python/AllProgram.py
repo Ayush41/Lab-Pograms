@@ -1,3 +1,14 @@
+# Factorial using Recursion
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n* factorial(n-1)
+num = int(input("Enter a number to find factorial: "))
+fact = factorial(num)
+print(f"The factorial of {num} is {fact}")
+
+
 # Lambda Function
 # program to square all num in list
 mlist = [1,3,4,6,7,8,2]

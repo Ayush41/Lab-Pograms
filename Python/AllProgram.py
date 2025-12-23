@@ -8,6 +8,16 @@ num = int(input("Enter a number to find factorial: "))
 fact = factorial(num)
 print(f"The factorial of {num} is {fact}")
 
+# Using Itertaion
+def factorial_iter(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact = fact*i
+    return fact
+num = int(input("Enter a number to find factorial using iteration: "))
+fact = factorial_iter(num)
+print(f"The factorial of {num} using iteration is {fact}")
+
 
 # Lambda Function
 # program to square all num in list

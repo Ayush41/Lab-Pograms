@@ -20,4 +20,6 @@ func main(){
 
 	fmt.Println("Sum of integers:", add(intvar2,intVar))
 	fmt.Println("Factorial of 5:", factorial(5))
+
+	fmt.Println("Square root of 16:", math.Sqrt(16))
 }

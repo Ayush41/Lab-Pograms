@@ -14,12 +14,12 @@ def median(data):
 
 def mode(data): # most frequent element in data
     f ={} 
+    count = 0
     for i in data:
         if i in f:
             f[i] += 1
         else:
             f[i] = 1 
-    count = 0
     mode_val = None
     for key in f:
         if f[key] > count:
@@ -34,7 +34,7 @@ def std_dev(data):
 
 
 if __name__ == "__main__":
-    data = [1,2, 2, 2, 3, 4,5,0,4,2,3,1]
+    data = [1,2, 2, 2, 3, 4,5,0,4,2,3,1,10,10,10,10,10,10]
     print("Mean:", mean(data))
     print("Median:", median(data))
     print("Mode:", mode(data))

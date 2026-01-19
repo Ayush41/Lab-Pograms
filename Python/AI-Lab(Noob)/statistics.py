@@ -1,5 +1,7 @@
 # 1. python program to calculate mean median mode std dev, variance. (no library)
 # Modular way of programming
+import matplotlib.pyplot as plt
+
 def mean(data):
     return sum(data)/len(data)
 
@@ -32,6 +34,12 @@ def std_dev(data):
     var = sum((x - meanval) ** 2 for x in data) / len(data)
     return var ** 0.5
 
+def vizualization(data):
+    plt.hist(data, bins=10, edgecolor='black')
+    plt.title('Data Distribution')
+    plt.xlabel('Value')
+    plt.ylabel('Frequency')
+    plt.show()
 
 if __name__ == "__main__":
     data = [1,2, 2, 2, 3, 4,5,0,4,2,3,1,10,10,10,10,10,10]
@@ -39,4 +47,4 @@ if __name__ == "__main__":
     print("Median:", median(data))
     print("Mode:", mode(data))
     print("Standard Deviation:", std_dev(data))
-    
+    vizualization(data)

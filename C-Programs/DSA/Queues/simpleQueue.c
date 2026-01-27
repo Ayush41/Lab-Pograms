@@ -18,10 +18,21 @@ int EnQ(int front,int rear, int size, int queue[], int value){
 }
 
 // 2. Dequeue (remove element)
+int DeQ(){
+
+}
 // 3. Front (view front element)
 // 4. Rear (view rear element)
 // 5. isEmpty (check if queue is empty)
+int isEmpty(){
+
+}
 // 6. isFull (check if queue is full)
+int isFull(){
+
+}
+
+
 
 int main(){
 

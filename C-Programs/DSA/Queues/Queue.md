@@ -297,3 +297,7 @@ void display(Queue *q) {
 - **Various implementations** suit different requirements
 - **Applications** range from OS to real-world scenarios
 - **Choose implementation** based on specific use case needs
+
+
+
+Q1.write a program to implement all the operations of queue using 2 stacks. FIFO.

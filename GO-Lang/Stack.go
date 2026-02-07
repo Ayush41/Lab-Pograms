@@ -49,4 +49,17 @@ func (s *Stack) Clear() {
 func main() {
 	stack := &Stack{}
 
+	stack.Push(10)
+	stack.Push(20)
+	stack.Push(30)
+
+	fmt.Println("Stack size:", stack.Size())
+
+	peek, _ := stack.Peek()
+	fmt.Println("Peek:", peek)
+
+	pop, _ := stack.Pop()
+	fmt.Println("Popped:", pop)
+
+	fmt.Println("Is empty:", stack.IsEmpty())
 }

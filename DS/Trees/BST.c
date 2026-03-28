@@ -7,6 +7,26 @@ typedef struct Node{
     struct Node* right;
 }node;
 
+void insert(node** root,int data){
+
+}
+void preorder(node* root){
+
+}
+void inorder(node* root){
+    
+}
+void postorder(node* root){
+    
+}
+node* search(node* root,int data){
+    return NULL;
+}
+void delete(node** root,int data){
+    
+}
+
+
 int main(){
 
     // Creating a new node
@@ -55,7 +75,7 @@ int main(){
                 printf("Invalid choice! Please try again.\n");
         }
     } while(choice != '7');
-    
+
 
     return 0;
 

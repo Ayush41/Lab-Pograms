@@ -24,7 +24,6 @@ v1[1:3]
 v1[v1>5]
 
 # Demonstrate mixing of different type of obj and conversion between data types.
-    
 
 
 # Logical Operations 
@@ -46,4 +45,4 @@ print(v1 - v2)
 print(v1 * v2)
 print(v1 / v2)
 print(v1 %% v2)
-print(v1 ^ v2)
+print(v1 ^ v2) 

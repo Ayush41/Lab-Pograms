@@ -55,3 +55,12 @@ SELECT e.employee_id, e.employee_name, e.salary, d.department_name
 FROM employees e
 LEFT JOIN departments d ON e.department_id = d.department_id;	
 
+--5 Right Join employees with their departments, including departments without employees.
+SELECT e.employee_id, e.employee_name, e.salary, d.department_name
+FROM employees e
+RIGHT JOIN departments d ON e.department_id = d.department_id;
+
+-- 6. Full Outer Join employees with their departments, including employees without a department and departments without employees.
+SELECT e.employee_id, e.employee_name, e.salary, d.department_name
+FROM employees e
+FULL OUTER JOIN departments d ON e.department_id = d.department_id;

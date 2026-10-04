@@ -1,82 +1,110 @@
-# 💻 Lab Programs Repository — C, C++, and Python
+# Lab Programs
 
-Welcome to the **Lab Programs Repository**!  
-This repository contains a collection of lab exercises and programming assignments implemented in **C**, **C++**, and **Python**.  
+A collection of programming lab exercises, assignments, and notes. The repository is primarily focused on C, with additional practice in Python, SQL/PL-SQL, Go, R, and data structures.
 
-These programs cover **fundamental concepts**, **data structures**, and **typical academic problems** — perfect for students and learners to practice programming skills.
+## Contents
 
----
+- [C Programs](#c-programs)
+- [Data Structures in C](#data-structures-in-c)
+- [C++](#c)
+- [DBMS and SQL](#dbms-and-sql)
+- [Python](#python)
+- [Go](#go)
+- [R](#r)
+- [Repository layout](#repository-layout)
+- [Running the programs](#running-the-programs)
 
-## 📂 Contents
+## C Programs
 
-- [C Programs](./C-Programs)
-- [C++ Programs](./CPP)
-- [Python Programs](./Python)
+The [`C-Programs`](./C-Programs) directory contains introductory programs, lab questions, process scheduling, functions, and queue/stack implementations.
 
-Each folder contains multiple lab programs organized by **topics** or **questions**.
+- [`Info.md`](./C-Programs/Info.md) contains array problem solutions and notes.
+- [`LabQues.txt`](./C-Programs/LabQues.txt), [`lab5.md`](./C-Programs/lab5.md), and [`lab6.md`](./C-Programs/lab6.md) contain lab questions and exercises.
+- [`DSA`](./C-Programs/DSA) contains linked lists, stacks, queues, and the array assignment.
 
----
+The standalone [`DecimalToBinary.c`](./DecimalToBinary.c) program converts a decimal integer to binary.
 
-## 🧠 Overview
+## Data Structures in C
 
-### 🟦 C Programs
-This folder includes basic to intermediate-level programs written in C, covering topics such as:
-- Arrays and Strings  
-- Pointers and Memory Management  
-- Structures and Unions  
-- File Handling  
-- Algorithms and Data Structures  
+The [`DS`](./DS) directory contains separate implementations and notes for:
 
-👉 [Browse C Programs](./C-Programs)
+- Stack operations: [`StackOps.c`](./DS/StackOps.c)
+- Graphs, including adjacency-list operations and traversal notes: [`DS/Graph`](./DS/Graph)
+- Trees, including binary tree and binary search tree programs: [`DS/Trees`](./DS/Trees)
 
----
+## C++
 
-### 🟪 C++ Programs
-This folder contains lab programs demonstrating:
-- Object-Oriented Programming concepts (Classes, Inheritance, Polymorphism)  
-- Standard Template Library (STL) usage  
-- File I/O and Exception Handling  
-- Data Structures like Linked Lists, Stacks, and Queues  
+The [`CPP`](./CPP) directory is reserved for C++ work. It currently contains [`Info.md`](./CPP/Info.md), which is empty and available for future notes or programs.
 
-👉 [Browse C++ Programs](./CPP)
+## DBMS and SQL
 
----
+The [`DBMS`](./DBMS) directory contains Oracle SQL and PL/SQL lab work, query notes, and database setup material.
 
-### 🟪 Advanced DBMS – Oracle SQL Programs
+- Query scripts: [`BasicQueries.sql`](./DBMS/BasicQueries.sql), [`LabQueries.sql`](./DBMS/LabQueries.sql), [`Subqueries.sql`](./DBMS/Subqueries.sql), and [`Termwork3.sql`](./DBMS/Termwork3.sql)
+- Topic notes: [`Joins.md`](./DBMS/Joins.md), [`Subqueries.md`](./DBMS/Subqueries.md), [`UNION.md`](./DBMS/UNION.md), and [`PL/SQL.md`](./DBMS/PL/SQL.md)
+- Supporting material: [`Queries.txt`](./DBMS/Queries.txt), [`Termwork3.txt`](./DBMS/Termwork3.txt), [`Info.md`](./DBMS/Info.md), and [`Dockerfile`](./DBMS/Dockerfile)
 
-This folder contains **Advanced Database Management System (DBMS)** lab programs implemented using **Oracle SQL**.  
-It includes practice work on:
+See [`DBMS/Info.md`](./DBMS/Info.md) for the Oracle Database and SQL*Plus/SQL Developer prerequisites.
 
-- **Relational Database Design** (DDL, DML, Constraints, Normalization)
-- **Advanced SQL Queries** (Nested Subqueries, Correlated Subqueries)
-- **Set Operators** (UNION, UNION ALL, INTERSECT, MINUS)
-- **Joins** (Inner, Outer, Cross, Self Joins)
-- **PL/SQL Programming** (Procedures, Functions, Packages, Triggers, Cursors)
-- **Aggregate & Analytical Functions** (GROUP BY, HAVING, RANK, DENSE_RANK)
-- **Transactions & Exception Handling** (COMMIT, ROLLBACK, SAVEPOINT)
-- **Views, Sequences, Synonyms, Indexes** for database optimization
-- **Performance & Security Concepts** (Query Optimization, User Privileges, Roles)
+## Python
 
-These programs focus on building strong Oracle SQL and PL/SQL expertise essential for advanced DBMS coursework and real-world applications.
+The [`Python`](./Python) directory contains general lab solutions, notebooks, file handling, object-oriented programming, and introductory AI/problem-solving exercises.
 
+- General exercises: [`AllProgram.py`](./Python/AllProgram.py), [`Sol1.py`](./Python/Sol1.py) through [`Sol4.py`](./Python/Sol4.py), and [`Qlab3.md`](./Python/Qlab3.md)
+- OOP practice: [`Python/OOPs`](./Python/OOPs)
+- AI and algorithms: [`Python/AI-Lab(Noob)`](./Python/AI-Lab%28Noob%29)
+- File handling and lab notebooks: [`Python/File-Handling`](./Python/File-Handling) and [`lab3.ipynb`](./Python/lab3.ipynb)
 
-👉 [Browse C++ Programs](./CPP)
+## Go
 
----
+The [`GO-Lang`](./GO-Lang) directory contains Go syntax examples, a hello-world program, and a stack implementation:
+[`All-syntax.go`](./GO-Lang/All-syntax.go), [`hello.go`](./GO-Lang/hello.go), and [`Stack.go`](./GO-Lang/Stack.go).
 
-### 🐍 Python Programs
-This folder includes Python scripts for a variety of problems, including:
-- String Manipulation and Analysis  
-- Algorithms and Problem Solving  
-- Recursion and Higher-Order Functions  
-- Data Structures and Utilities  
+## R
 
-👉 [Browse Python Programs](./Python)
+The [`R`](./R) directory contains syntax and examples for vectors, lists, and basic R operations:
+[`AllSyntaxStuff.r`](./R/AllSyntaxStuff.r), [`Vectors.r`](./R/Vectors.r), and [`list.r`](./R/list.r).
 
----
+## Repository layout
 
-## ⚙️ How to Use
+```text
+.
+├── C-Programs/       C labs, assignments, and basic DSA
+├── CPP/              C++ notes and future programs
+├── DBMS/             Oracle SQL and PL/SQL queries and notes
+├── DS/               Graph, tree, and stack implementations in C
+├── GO-Lang/          Go examples
+├── Python/           Python labs, notebooks, OOP, and AI exercises
+├── R/                R examples
+├── DecimalToBinary.c Standalone C program
+├── LICENSE
+└── notes.txt
+```
 
-1. **Clone this repository** to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/lab-programs.git
+## Running the programs
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ayush41/Lab-Pograms.git
+cd Lab-Pograms
+```
+
+Compile and run a C program with GCC:
+
+```bash
+gcc DecimalToBinary.c -o decimal-to-binary
+./decimal-to-binary
+```
+
+Run a Python script with Python 3:
+
+```bash
+python3 Python/Sol1.py
+```
+
+Open `.ipynb` files with Jupyter Notebook or JupyterLab. Execute `.sql` files with an Oracle SQL client after configuring an Oracle database.
+
+## License
+
+This project is distributed under the [GNU General Public License v3.0](./LICENSE).

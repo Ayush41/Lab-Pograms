@@ -32,6 +32,26 @@ INSERT INTO employees (employee_id, employee_name, salary, department_id) VALUES
 
 -- 1. Find employees earning more than the average salary.
 
--- 2. Find departments with more than 5 employees.
+Select * from employees where salary > (SELECT AVG(salary) from Employees);
 
+-- 2. Find departments with more than 5 employees.
+SELECT dept_id, COUNT(*) as Total 
+from employees
+GROUP by dept_id
+HAVING COUNT(*) > 5;
+
+-- FORMULA FOR JOINS
+```
+SELECT Columns FROM Table1 
+JOIN Table2 on Table1.col = Table2.col
+```
 -- 3. Join employees with their departments.
+SELECT e.employee_id, e.employee_name, e.salary, d.department_name
+FROM employees e
+JOIN departments d ON e.department_id = d.department_id;
+
+-- 4 Left Join employees with their departments, including employees without a department.
+SELECT e.employee_id, e.employee_name, e.salary, d.department_name
+FROM employees e
+LEFT JOIN departments d ON e.department_id = d.department_id;	
+
